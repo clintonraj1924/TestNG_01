@@ -1,7 +1,5 @@
 package org.sample.TestNG_01;
 
-import java.util.Date;
-
 import org.demo.qa.base.Base;
 import org.demo.qa.util.Utilities;
 import org.openqa.selenium.By;
@@ -12,11 +10,15 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class Login extends Base {
+	public Login() {
+		super();
+	}
 	WebDriver driver;
 
 	@BeforeMethod
 	public void setup() throws InterruptedException {
-		driver = initializeBrowser("Chrome");
+		//loadPropertiesFile(); //instead of using Base constructor -->login
+		driver = initializeBrowser(prop.getProperty("browserName"));
 		openApp();
 		driver.findElement(By.xpath("//span[text()=\"My Account\"]")).click();
 		driver.findElement(By.linkText("Login")).click();
@@ -89,11 +91,4 @@ public class Login extends Base {
 		Assert.assertTrue(actualWarningMess.contains(expectedWarningMess), "Expected warning mess dosint come");
 
 	}
-
-	public String genrateTimeStamp() {
-		Date date = new Date();
-		return (date.toString().replace(" ", "_").replace(":", "_"));
-
-	}
-
 }

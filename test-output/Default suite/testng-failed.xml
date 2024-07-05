@@ -3,23 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="org.sample.TestNG_01.Register">
-        <methods>
-          <include name="veryfyRegisteringAnAccountWithAllFields"/>
-          <include name="veryfyRegisteringAnExistingAccount"/>
-          <include name="veryfyRegisteringEnterAnyOfFields"/>
-          <include name="veryfyRegisteringAnAccountWithMandateryFields"/>
-        </methods>
-      </class> <!-- org.sample.TestNG_01.Register -->
       <class name="org.sample.TestNG_01.Login">
         <methods>
-          <include name="veryfyLoginWithCredentials"/>
-          <include name="veryfyLoginWithInValidEmailAndValidPossword"/>
           <include name="veryfyLoginWithValidCredentials"/>
           <include name="tearDown"/>
-          <include name="veryfyLoginWithValidEmailAndInValidPossword"/>
           <include name="setup"/>
-          <include name="veryfyLoginWithOutCredentials"/>
         </methods>
       </class> <!-- org.sample.TestNG_01.Login -->
     </classes>
