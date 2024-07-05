@@ -1,40 +1,23 @@
 package org.sample.TestNG_01;
 
-import java.time.Duration;
 import java.util.Date;
 
+import org.demo.qa.base.Base;
 import org.demo.qa.util.Utilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.chrome.ChromeDriver;
-import org.openqa.selenium.edge.EdgeDriver;
-import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
-public class Login {
+public class Login extends Base {
 	WebDriver driver;
 
 	@BeforeMethod
 	public void setup() throws InterruptedException {
-		String browserName="Chrome";
-		if(browserName.equals("Chrome")) {
-			driver=new ChromeDriver();
-		}
-		else if (browserName.equals("Edge")) {
-			driver=new EdgeDriver();
-		}
-		else if (browserName.equals("Safari")) {
-			driver=new SafariDriver();
-		}
-		driver = new ChromeDriver();
-		driver.manage().window().maximize();
-		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
-		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
-		driver.get("https://tutorialsninja.com/demo/");
-		Thread.sleep(5000);
+		driver = initializeBrowser("Chrome");
+		openApp();
 		driver.findElement(By.xpath("//span[text()=\"My Account\"]")).click();
 		driver.findElement(By.linkText("Login")).click();
 	}
