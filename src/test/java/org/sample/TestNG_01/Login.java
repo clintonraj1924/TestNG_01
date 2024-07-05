@@ -31,7 +31,64 @@ public class Login {
 	}
 	
 	@Test(priority  =2)
+	public void veryfyLoginWithCredentials() throws InterruptedException {
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+		driver.get("https://tutorialsninja.com/demo/");
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//span[text()=\"My Account\"]")).click();
+		driver.findElement(By.linkText("Login")).click();
+		driver.findElement(By.id("input-email")).sendKeys("test_testng"+genrateTimeStamp()+"@yopmail.com");
+		driver.findElement(By.id("input-password")).sendKeys("test123$1234");
+		driver.findElement(By.xpath("//input[@value=\"Login\"]")).click();
+		String actualWarningMess= driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
+		String expectedWarningMess= "Warning: No match for E-Mail Address and/or Password.";
+		Assert.assertTrue(actualWarningMess.contains(expectedWarningMess),"Expected warning mess dosint come");
+		
+		driver.quit();
+	}
+	@Test(priority  =3)
 	public void veryfyLoginWithInValidEmailAndValidPossword() throws InterruptedException {
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+		driver.get("https://tutorialsninja.com/demo/");
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//span[text()=\"My Account\"]")).click();
+		driver.findElement(By.linkText("Login")).click();
+		driver.findElement(By.id("input-email")).sendKeys("test_testng"+genrateTimeStamp()+"@yopmail.com");
+		driver.findElement(By.id("input-password")).sendKeys("test123$");
+		driver.findElement(By.xpath("//input[@value=\"Login\"]")).click();
+		String actualWarningMess= driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
+		String expectedWarningMess= "Warning: No match for E-Mail Address and/or Password.";
+		Assert.assertTrue(actualWarningMess.contains(expectedWarningMess),"Expected warning mess dosint come");
+		
+		driver.quit();
+	}
+	@Test(priority  =4)
+	public void veryfyLoginWithValidEmailAndInValidPossword() throws InterruptedException {
+		WebDriver driver=new ChromeDriver();
+		driver.manage().window().maximize();
+		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
+		driver.get("https://tutorialsninja.com/demo/");
+		Thread.sleep(5000);
+		driver.findElement(By.xpath("//span[text()=\"My Account\"]")).click();
+		driver.findElement(By.linkText("Login")).click();
+		driver.findElement(By.id("input-email")).sendKeys("test_testng@yopmail.com");
+		driver.findElement(By.id("input-password")).sendKeys("test123$123");
+		driver.findElement(By.xpath("//input[@value=\"Login\"]")).click();
+		String actualWarningMess= driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
+		String expectedWarningMess= "Warning: No match for E-Mail Address and/or Password.";
+		Assert.assertTrue(actualWarningMess.contains(expectedWarningMess),"Expected warning mess dosint come");
+		
+		driver.quit();
+	}
+	@Test(priority  =5)
+	public void veryfyLoginWithOutCredentials() throws InterruptedException {
 		WebDriver driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
