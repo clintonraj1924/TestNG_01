@@ -1,4 +1,4 @@
-package org.demo.qa;
+package org.demo.qa.util;
 
 import java.util.Date;
 

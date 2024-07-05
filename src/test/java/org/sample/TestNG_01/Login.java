@@ -3,7 +3,7 @@ package org.sample.TestNG_01;
 import java.time.Duration;
 import java.util.Date;
 
-import org.demo.qa.Utilities;
+import org.demo.qa.util.Utilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
