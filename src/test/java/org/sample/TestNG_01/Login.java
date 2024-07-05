@@ -10,9 +10,13 @@ import org.testng.Assert;
 import org.testng.annotations.Test;
 
 public class Login {
+	WebDriver driver;
+	public void tearDown() {
+		driver.quit();
+	}
 	@Test(priority = 1)
 	public void veryfyLoginWithValidCredentials() throws InterruptedException {
-		WebDriver driver=new ChromeDriver();
+		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
@@ -25,14 +29,11 @@ public class Login {
 		driver.findElement(By.xpath("//input[@value=\"Login\"]")).click();
 		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed(),"TestNg-->Edit your account information");
 		
-		
-		
-		driver.quit();
 	}
 	
 	@Test(priority  =2)
 	public void veryfyLoginWithCredentials() throws InterruptedException {
-		WebDriver driver=new ChromeDriver();
+	    driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
@@ -46,12 +47,11 @@ public class Login {
 		String actualWarningMess= driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
 		String expectedWarningMess= "Warning: No match for E-Mail Address and/or Password.";
 		Assert.assertTrue(actualWarningMess.contains(expectedWarningMess),"Expected warning mess dosint come");
-		
-		driver.quit();
+
 	}
 	@Test(priority  =3)
 	public void veryfyLoginWithInValidEmailAndValidPossword() throws InterruptedException {
-		WebDriver driver=new ChromeDriver();
+		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
@@ -65,12 +65,11 @@ public class Login {
 		String actualWarningMess= driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
 		String expectedWarningMess= "Warning: No match for E-Mail Address and/or Password.";
 		Assert.assertTrue(actualWarningMess.contains(expectedWarningMess),"Expected warning mess dosint come");
-		
-		driver.quit();
+
 	}
 	@Test(priority  =4)
 	public void veryfyLoginWithValidEmailAndInValidPossword() throws InterruptedException {
-		WebDriver driver=new ChromeDriver();
+	    driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
@@ -84,12 +83,11 @@ public class Login {
 		String actualWarningMess= driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
 		String expectedWarningMess= "Warning: No match for E-Mail Address and/or Password.";
 		Assert.assertTrue(actualWarningMess.contains(expectedWarningMess),"Expected warning mess dosint come");
-		
-		driver.quit();
+
 	}
 	@Test(priority  =5)
 	public void veryfyLoginWithOutCredentials() throws InterruptedException {
-		WebDriver driver=new ChromeDriver();
+		driver=new ChromeDriver();
 		driver.manage().window().maximize();
 		//driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
@@ -103,8 +101,7 @@ public class Login {
 		String actualWarningMess= driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]")).getText();
 		String expectedWarningMess= "Warning: No match for E-Mail Address and/or Password.";
 		Assert.assertTrue(actualWarningMess.contains(expectedWarningMess),"Expected warning mess dosint come");
-		
-		driver.quit();
+
 	}
 	
 	public String genrateTimeStamp() {
