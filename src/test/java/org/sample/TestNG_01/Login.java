@@ -3,9 +3,12 @@ package org.sample.TestNG_01;
 import java.time.Duration;
 import java.util.Date;
 
+import org.demo.qa.Utilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.safari.SafariDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
@@ -16,6 +19,16 @@ public class Login {
 
 	@BeforeMethod
 	public void setup() throws InterruptedException {
+		String browserName="Chrome";
+		if(browserName.equals("Chrome")) {
+			driver=new ChromeDriver();
+		}
+		else if (browserName.equals("Edge")) {
+			driver=new EdgeDriver();
+		}
+		else if (browserName.equals("Safari")) {
+			driver=new SafariDriver();
+		}
 		driver = new ChromeDriver();
 		driver.manage().window().maximize();
 		// driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
@@ -45,7 +58,7 @@ public class Login {
 	@Test(priority = 2)
 	public void veryfyLoginWithCredentials() {
 
-		driver.findElement(By.id("input-email")).sendKeys("test_testng" + genrateTimeStamp() + "@yopmail.com");
+		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateEmailWithTimeStamp());
 		driver.findElement(By.id("input-password")).sendKeys("test123$1234");
 		driver.findElement(By.xpath("//input[@value=\"Login\"]")).click();
 		String actualWarningMess = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]"))
@@ -58,7 +71,7 @@ public class Login {
 	@Test(priority = 3)
 	public void veryfyLoginWithInValidEmailAndValidPossword() {
 
-		driver.findElement(By.id("input-email")).sendKeys("test_testng" + genrateTimeStamp() + "@yopmail.com");
+		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateEmailWithTimeStamp());
 		driver.findElement(By.id("input-password")).sendKeys("test123$");
 		driver.findElement(By.xpath("//input[@value=\"Login\"]")).click();
 		String actualWarningMess = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]"))
