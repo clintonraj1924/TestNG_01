@@ -1,2 +1,4 @@
 URL=https://tutorialsninja.com/demo/
 browserName=Chrome
+validEmail=test_testng@yopmail.com
+validPassword=test123$

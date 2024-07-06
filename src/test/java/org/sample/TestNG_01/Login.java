@@ -1,6 +1,8 @@
 package org.sample.TestNG_01;
 
 import org.demo.qa.base.Base;
+import org.demo.qa.pages.HomePage;
+import org.demo.qa.pages.LoginPage;
 import org.demo.qa.util.Utilities;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
@@ -20,8 +22,10 @@ public class Login extends Base {
 		//loadPropertiesFile(); //instead of using Base constructor -->login
 		driver = initializeBrowser(prop.getProperty("browserName"));
 		openApp();
-		driver.findElement(By.xpath("//span[text()=\"My Account\"]")).click();
-		driver.findElement(By.linkText("Login")).click();
+		HomePage homePage = new HomePage(driver);
+		homePage.clickMyAccount();
+		homePage.selectLoginOption();
+
 	}
 
 	@AfterMethod
@@ -31,10 +35,15 @@ public class Login extends Base {
 
 	@Test(priority = 1)
 	public void veryfyLoginWithValidCredentials() {
-
-		driver.findElement(By.id("input-email")).sendKeys("test_testng@yopmail.com");
-		driver.findElement(By.id("input-password")).sendKeys("test123$");
-		driver.findElement(By.xpath("//input[@value=\"Login\"]")).click();
+		
+//        LoginPage loginPage=new LoginPage(driver);
+//        loginPage.enterEmailAdress(prop.getProperty("validEmail"));
+//        //loginPage.enterEmailAdress("test_testng@yopmail.com");
+////        loginPage.enterPassword(prop.getProperty("validPassword"));
+////        loginPage.clickLoginButton();
+		driver.findElement(By.id("input-email")).sendKeys(prop.getProperty("validEmail"));
+		driver.findElement(By.id("input-password")).sendKeys(prop.getProperty("validPassword"));
+		driver.findElement(By.xpath("//input[@value='Login']")).click();
 		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed(),
 				"TestNg-->Edit your account information");
 
