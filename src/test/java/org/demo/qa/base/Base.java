@@ -14,12 +14,23 @@ import org.openqa.selenium.safari.SafariDriver;
 public class Base {
 	WebDriver driver;
 	public Properties prop;
+	public Properties dataProp;
 	public Base() {
 		prop = new Properties();
+		
 		File propFile = new File(System.getProperty("user.dir")+"\\src\\main\\java\\org\\demo\\qa\\config\\config.propertys");
 		try {
 			FileInputStream fis=new FileInputStream(propFile);
 			prop.load(fis);
+					}
+		catch(Throwable e) {
+			e.printStackTrace();
+		}
+		dataProp=new Properties();
+		File dataPropFile = new File(System.getProperty("user.dir")+"\\src\\main\\java\\org\\demo\\qa\\testData\\testData.properties");
+		try {
+			FileInputStream dataFis=new FileInputStream(dataPropFile);
+			prop.load(dataFis);
 					}
 		catch(Throwable e) {
 			e.printStackTrace();

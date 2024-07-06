@@ -36,8 +36,8 @@ public class Login extends Base {
 	@Test(priority = 1)
 	public void veryfyLoginWithValidCredentials() {
 		
-//        LoginPage loginPage=new LoginPage(driver);
-//        loginPage.enterEmailAdress(prop.getProperty("validEmail"));
+        LoginPage loginPage=new LoginPage(driver);
+        loginPage.enterEmailAdress(prop.getProperty("validEmail"));
 //        //loginPage.enterEmailAdress("test_testng@yopmail.com");
 ////        loginPage.enterPassword(prop.getProperty("validPassword"));
 ////        loginPage.clickLoginButton();
@@ -53,7 +53,7 @@ public class Login extends Base {
 	public void veryfyLoginWithCredentials() {
 
 		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateEmailWithTimeStamp());
-		driver.findElement(By.id("input-password")).sendKeys("test123$1234");
+		driver.findElement(By.id("input-password")).sendKeys(dataProp.getProperty("invalidPassword"));
 		driver.findElement(By.xpath("//input[@value=\"Login\"]")).click();
 		String actualWarningMess = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]"))
 				.getText();
