@@ -9,6 +9,7 @@ import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 public class Login extends Base {
@@ -33,31 +34,36 @@ public class Login extends Base {
 		driver.quit();
 	}
 
-	@Test(priority = 1)
-	public void veryfyLoginWithValidCredentials() {
+	@Test(priority = 1, dataProvider = "supplyTestData")
+	public void veryfyLoginWithValidCredentials(String email, String password) {
 		
         LoginPage loginPage=new LoginPage(driver);
-        loginPage.enterEmailAdress(prop.getProperty("validEmail"));
-//        //loginPage.enterEmailAdress("test_testng@yopmail.com");
-////        loginPage.enterPassword(prop.getProperty("validPassword"));
-////        loginPage.clickLoginButton();
-		driver.findElement(By.id("input-email")).sendKeys(prop.getProperty("validEmail"));
-		driver.findElement(By.id("input-password")).sendKeys(prop.getProperty("validPassword"));
-		driver.findElement(By.xpath("//input[@value='Login']")).click();
+        loginPage.enterEmailAdress(email);
+        loginPage.enterPassword(password);
+        loginPage.clickLoginButton();
 		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed(),
 				"TestNg-->Edit your account information");
 
 	}
+	@DataProvider
+	public Object[][] supplyTestData() {
+		Object[][] data= {{"test_testng@yopmail.com","test123$"},
+				{"test_testng@yopmail.com","test123$"},
+				{"test_testng@yopmail.com","test123$"}};
+		return data;
+	}
 
 	@Test(priority = 2)
-	public void veryfyLoginWithCredentials() {
+	public void veryfyLoginWithCredentials() throws InterruptedException {
 
 		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateEmailWithTimeStamp());
 		driver.findElement(By.id("input-password")).sendKeys(dataProp.getProperty("invalidPassword"));
-		driver.findElement(By.xpath("//input[@value=\"Login\"]")).click();
+		driver.findElement(By.xpath("//input[@value='Login']")).click();
+		Thread.sleep(5000);
 		String actualWarningMess = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]"))
 				.getText();
-		String expectedWarningMess = "Warning: No match for E-Mail Address and/or Password.";
+		//String expectedWarningMess = dataProp.getProperty("emailPasswordNoMachWarning");
+		String expectedWarningMess ="Warning: No match for E-Mail Address and/or Password.";
 		Assert.assertTrue(actualWarningMess.contains(expectedWarningMess), "Expected warning mess dosint come");
 
 	}
@@ -71,6 +77,7 @@ public class Login extends Base {
 		String actualWarningMess = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]"))
 				.getText();
 		String expectedWarningMess = "Warning: No match for E-Mail Address and/or Password.";
+		//String expectedWarningMess = dataProp.getProperty("emailPasswordNoMachWarning");
 		Assert.assertTrue(actualWarningMess.contains(expectedWarningMess), "Expected warning mess dosint come");
 
 	}

@@ -18,7 +18,7 @@ public class Register extends Base {
 		openApp();
 		driver.findElement(By.xpath("//span[text()=\"My Account\"]")).click();
 		driver.findElement(By.linkText("Register")).click();
-		driver.findElement(By.id("input-firstname")).sendKeys("Clinton");
+		driver.findElement(By.id("input-firstname")).sendKeys("Clinton"); //sendKeys(dataProp.getProperty("firstName"));
 		driver.findElement(By.id("input-lastname")).sendKeys("Raj");
 		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateEmailWithTimeStamp());
 		driver.findElement(By.id("input-telephone")).sendKeys("9843461696");
