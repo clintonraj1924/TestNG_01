@@ -18,6 +18,9 @@ public class LoginPage {
 	@FindBy(xpath="//input[@value='Login']")
 	private WebElement loginButton;
 	
+	@FindBy(xpath="//div[contains(@class,'alert-dismissible')]")
+	private WebElement retrieveEmailPasswordNotMachingWarnigText;
+	
 	public LoginPage(WebDriver driver) {
 		this.driver=driver;
 		PageFactory.initElements(driver, this);
@@ -32,5 +35,10 @@ public class LoginPage {
 	}
 	public void clickLoginButton() {
 		loginButton.click();
+	}
+	
+	public String retrieveEmailPasswordNotMachingWarnig() {
+		String EmailPasswordNotMachingWarnigText =retrieveEmailPasswordNotMachingWarnigText.getText();
+		return EmailPasswordNotMachingWarnigText;
 	}
 }

@@ -1,6 +1,7 @@
 package org.sample.TestNG_01;
 
 import org.demo.qa.base.Base;
+
 import org.demo.qa.pages.HomePage;
 import org.demo.qa.pages.LoginPage;
 import org.demo.qa.util.Utilities;
@@ -10,8 +11,10 @@ import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.DataProvider;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+//@Listeners(org.demo.qa.myListener.MyListener.class)
 public class Login extends Base {
 	public Login() {
 		super();
@@ -42,7 +45,7 @@ public class Login extends Base {
         loginPage.enterPassword(password);
         loginPage.clickLoginButton();
 		Assert.assertTrue(driver.findElement(By.linkText("Edit your account information")).isDisplayed(),
-				"TestNg-->Edit your account information");
+				"TestNg-->Edit your account information not came");
 
 	}
 	@DataProvider
@@ -71,11 +74,13 @@ public class Login extends Base {
 	@Test(priority = 3)
 	public void veryfyLoginWithInValidEmailAndValidPossword() {
 
-		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateEmailWithTimeStamp());
-		driver.findElement(By.id("input-password")).sendKeys("test123$");
-		driver.findElement(By.xpath("//input[@value=\"Login\"]")).click();
+		LoginPage loginPage=new LoginPage(driver);
+		loginPage.enterEmailAdress(Utilities.generateEmailWithTimeStamp());
+		loginPage.enterPassword("test123$");
+        loginPage.clickLoginButton();
 		String actualWarningMess = driver.findElement(By.xpath("//div[contains(@class,'alert-dismissible')]"))
 				.getText();
+		//String actualWarningMess = loginPage.retrieveEmailPasswordNotMachingWarnig();
 		String expectedWarningMess = "Warning: No match for E-Mail Address and/or Password.";
 		//String expectedWarningMess = dataProp.getProperty("emailPasswordNoMachWarning");
 		Assert.assertTrue(actualWarningMess.contains(expectedWarningMess), "Expected warning mess dosint come");

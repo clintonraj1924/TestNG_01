@@ -8,8 +8,10 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
+import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
+@Listeners(org.demo.qa.myListener.MyListener.class)
 public class Register extends Base {
 	WebDriver driver;
 	@Test(priority = 1)
