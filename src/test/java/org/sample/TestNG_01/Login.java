@@ -14,12 +14,12 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-//@Listeners(org.demo.qa.myListener.MyListener.class)
+@Listeners(org.demo.qa.myListener.MyListener.class)
 public class Login extends Base {
 	public Login() {
 		super();
 	}
-	WebDriver driver;
+	public WebDriver driver;
 
 	@BeforeMethod
 	public void setup() throws InterruptedException {
@@ -56,7 +56,7 @@ public class Login extends Base {
 		return data;
 	}
 
-	@Test(priority = 2)
+	@Test(priority = 2, dependsOnMethods = {"veryfyLoginWithValidCredentials"})
 	public void veryfyLoginWithCredentials() throws InterruptedException {
 
 		driver.findElement(By.id("input-email")).sendKeys(Utilities.generateEmailWithTimeStamp());
