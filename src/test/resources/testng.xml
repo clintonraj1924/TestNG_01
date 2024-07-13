@@ -3,8 +3,8 @@
 <suite name="Tutolial ninja testsute">
   <test thread-count="5" name="Tutorial ninja TC">
     <classes>
-      <class name="org.sample.TestNG_01.Register"/>
-      <class name="org.sample.TestNG_01.Login"/>
+      <class name="org.sample.TestNG_01.RegisterTest"/>
+      <class name="org.sample.TestNG_01.LoginTest"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

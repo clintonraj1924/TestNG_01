@@ -14,9 +14,9 @@ import org.testng.annotations.DataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
-@Listeners(org.demo.qa.myListener.MyListener.class)
-public class Login extends Base {
-	public Login() {
+//@Listeners(org.demo.qa.myListener.MyListener.class)
+public class LoginTest extends Base {
+	public LoginTest() {
 		super();
 	}
 	public WebDriver driver;

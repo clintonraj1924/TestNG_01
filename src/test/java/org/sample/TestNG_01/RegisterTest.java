@@ -12,7 +12,7 @@ import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
 
 @Listeners(org.demo.qa.myListener.MyListener.class)
-public class Register extends Base {
+public class RegisterTest extends Base {
 	WebDriver driver;
 	@Test(priority = 1)
 	public void veryfyRegisteringAnAccountWithMandateryFields() throws InterruptedException {

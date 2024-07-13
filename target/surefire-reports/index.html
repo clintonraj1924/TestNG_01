@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 4 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-Tutolial_ninja_testsute" class="navigator-link">
+              <span class="suite-name border-failed">Tutolial ninja testsute</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-Tutolial_ninja_testsute" class="navigator-link ">
+                    <span>E:\JAVA\TestNG_01\src\test\resources\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-Tutolial_ninja_testsute" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-Tutolial_ninja_testsute" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-Tutolial_ninja_testsute" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-Tutolial_ninja_testsute" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-Tutolial_ninja_testsute" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-Tutolial_ninja_testsute" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">11 methods, 4 failed,  7 skipped,  </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Tutolial_ninja_testsute" class="hide-methods failed suite-Tutolial_ninja_testsute"> (hide)</a> <!-- hide-methods failed suite-Tutolial_ninja_testsute -->
+                      <a href="#" panel-name="suite-Tutolial_ninja_testsute" class="show-methods failed suite-Tutolial_ninja_testsute"> (show)</a> <!-- show-methods failed suite-Tutolial_ninja_testsute -->
+                    </span>
+                    <div class="method-list-content failed suite-Tutolial_ninja_testsute">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tutolial_ninja_testsute" title="org.sample.TestNG_01.RegisterTest" class="method navigator-link" hash-for-method="veryfyRegisteringAnAccountWithAllFields">veryfyRegisteringAnAccountWithAllFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tutolial_ninja_testsute" title="org.sample.TestNG_01.RegisterTest" class="method navigator-link" hash-for-method="veryfyRegisteringAnAccountWithMandateryFields">veryfyRegisteringAnAccountWithMandateryFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tutolial_ninja_testsute" title="org.sample.TestNG_01.RegisterTest" class="method navigator-link" hash-for-method="veryfyRegisteringAnExistingAccount">veryfyRegisteringAnExistingAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tutolial_ninja_testsute" title="org.sample.TestNG_01.RegisterTest" class="method navigator-link" hash-for-method="veryfyRegisteringEnterAnyOfFields">veryfyRegisteringEnterAnyOfFields</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Tutolial_ninja_testsute -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Tutolial_ninja_testsute" class="hide-methods skipped suite-Tutolial_ninja_testsute"> (hide)</a> <!-- hide-methods skipped suite-Tutolial_ninja_testsute -->
+                      <a href="#" panel-name="suite-Tutolial_ninja_testsute" class="show-methods skipped suite-Tutolial_ninja_testsute"> (show)</a> <!-- show-methods skipped suite-Tutolial_ninja_testsute -->
+                    </span>
+                    <div class="method-list-content skipped suite-Tutolial_ninja_testsute">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tutolial_ninja_testsute" title="org.sample.TestNG_01.LoginTest" class="method navigator-link" hash-for-method="veryfyLoginWithCredentials">veryfyLoginWithCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tutolial_ninja_testsute" title="org.sample.TestNG_01.LoginTest" class="method navigator-link" hash-for-method="veryfyLoginWithInValidEmailAndValidPossword">veryfyLoginWithInValidEmailAndValidPossword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tutolial_ninja_testsute" title="org.sample.TestNG_01.LoginTest" class="method navigator-link" hash-for-method="veryfyLoginWithOutCredentials">veryfyLoginWithOutCredentials</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tutolial_ninja_testsute" title="org.sample.TestNG_01.LoginTest" class="method navigator-link" hash-for-method="veryfyLoginWithValidCredentials(test_testng@yopmail.com, test123$)">veryfyLoginWithValidCredentials(test_testng@yopmail.com, test123$)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tutolial_ninja_testsute" title="org.sample.TestNG_01.LoginTest" class="method navigator-link" hash-for-method="veryfyLoginWithValidCredentials(test_testng@yopmail.com, test123$)">veryfyLoginWithValidCredentials(test_testng@yopmail.com, test123$)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tutolial_ninja_testsute" title="org.sample.TestNG_01.LoginTest" class="method navigator-link" hash-for-method="veryfyLoginWithValidCredentials(test_testng@yopmail.com, test123$)">veryfyLoginWithValidCredentials(test_testng@yopmail.com, test123$)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Tutolial_ninja_testsute" title="org.sample.TestNG_01.LoginTest" class="method navigator-link" hash-for-method="veryfyLoginWithValidEmailAndInValidPossword">veryfyLoginWithValidEmailAndInValidPossword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Tutolial_ninja_testsute -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Tutolial_ninja_testsute" class="panel Tutolial_ninja_testsute">
+          <div class="suite-Tutolial_ninja_testsute-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">org.sample.TestNG_01.RegisterTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="veryfyRegisteringAnAccountWithAllFields">
+                  </a> <!-- veryfyRegisteringAnAccountWithAllFields -->
+                  <span class="method-name">veryfyRegisteringAnAccountWithAllFields</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;An invalid or illegal selector was specified&quot;}
+  (Session info: chrome=126.0.6478.127)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c8bd1f9c3e26f2fda0ce236ebdc84766, findElement {value=//input[@class=&apos;btn btn-primary&apos;], using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52397}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52397/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c8bd1f9c3e26f2fda0ce236ebdc84766
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.sample.TestNG_01.RegisterTest.veryfyRegisteringAnAccountWithAllFields(RegisterTest.java:57)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="veryfyRegisteringAnAccountWithMandateryFields">
+                  </a> <!-- veryfyRegisteringAnAccountWithMandateryFields -->
+                  <span class="method-name">veryfyRegisteringAnAccountWithMandateryFields</span>
+                  <div class="stack-trace">org.openqa.selenium.InvalidSelectorException: invalid selector
+from javascript error: {&quot;status&quot;:32,&quot;value&quot;:&quot;An invalid or illegal selector was specified&quot;}
+  (Session info: MicrosoftEdge=126.0.2592.87)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#invalid-selector-exception
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [285a8e566cbb84a901fba14c9f2fd050, findElement {value=//input[@class=&apos;btn btn-primary&apos;], using=name}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 126.0.2592.87, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52347}, msedge: {msedgedriverVersion: 126.0.2592.102 (720b5d614be..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52347/devtoo..., se:cdpVersion: 126.0.2592.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 285a8e566cbb84a901fba14c9f2fd050
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:66)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:355)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:349)
+	at org.sample.TestNG_01.RegisterTest.veryfyRegisteringAnAccountWithMandateryFields(RegisterTest.java:30)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="veryfyRegisteringAnExistingAccount">
+                  </a> <!-- veryfyRegisteringAnExistingAccount -->
+                  <span class="method-name">veryfyRegisteringAnExistingAccount</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: -0.009
+  (Session info: MicrosoftEdge=126.0.2592.87)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [88e38c980702cb18e80d167402d8774a, get {url=https://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 126.0.2592.87, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52457}, msedge: {msedgedriverVersion: 126.0.2592.102 (720b5d614be..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52457/devtoo..., se:cdpVersion: 126.0.2592.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 88e38c980702cb18e80d167402d8774a
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.demo.qa.base.Base.openApp(Base.java:68)
+	at org.sample.TestNG_01.RegisterTest.veryfyRegisteringAnExistingAccount(RegisterTest.java:68)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="veryfyRegisteringEnterAnyOfFields">
+                  </a> <!-- veryfyRegisteringEnterAnyOfFields -->
+                  <span class="method-name">veryfyRegisteringEnterAnyOfFields</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 2.292
+  (Session info: MicrosoftEdge=126.0.2592.87)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.edge.EdgeDriver
+Command: [d9fc0a02f97d45b48802b7b939f12cd7, get {url=https://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: false, browserName: MicrosoftEdge, browserVersion: 126.0.2592.87, fedcm:accounts: true, ms:edgeOptions: {debuggerAddress: localhost:52498}, msedge: {msedgedriverVersion: 126.0.2592.102 (720b5d614be..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52498/devtoo..., se:cdpVersion: 126.0.2592.87, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d9fc0a02f97d45b48802b7b939f12cd7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.demo.qa.base.Base.openApp(Base.java:68)
+	at org.sample.TestNG_01.RegisterTest.veryfyRegisteringEnterAnyOfFields(RegisterTest.java:92)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tutolial_ninja_testsute-class-failed -->
+          <div class="suite-Tutolial_ninja_testsute-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">org.sample.TestNG_01.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="veryfyLoginWithCredentials">
+                  </a> <!-- veryfyLoginWithCredentials -->
+                  <span class="method-name">veryfyLoginWithCredentials</span>
+                  <div class="stack-trace">java.lang.Throwable: Method org.sample.TestNG_01.LoginTest.veryfyLoginWithCredentials() on instance org.sample.TestNG_01.LoginTest@dd8ba08 depends on not successfully finished methods 
+[org.sample.TestNG_01.LoginTest.veryfyLoginWithValidCredentials() on instance org.sample.TestNG_01.LoginTest@dd8ba08]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 22 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="veryfyLoginWithInValidEmailAndValidPossword">
+                  </a> <!-- veryfyLoginWithInValidEmailAndValidPossword -->
+                  <span class="method-name">veryfyLoginWithInValidEmailAndValidPossword</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 0.403
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d70c6759556ac8dcdb712d34616aebab, get {url=https://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52555/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d70c6759556ac8dcdb712d34616aebab
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.demo.qa.base.Base.openApp(Base.java:68)
+	at org.sample.TestNG_01.LoginTest.setup(LoginTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="veryfyLoginWithOutCredentials">
+                  </a> <!-- veryfyLoginWithOutCredentials -->
+                  <span class="method-name">veryfyLoginWithOutCredentials</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 0.403
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d70c6759556ac8dcdb712d34616aebab, get {url=https://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52555/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d70c6759556ac8dcdb712d34616aebab
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.demo.qa.base.Base.openApp(Base.java:68)
+	at org.sample.TestNG_01.LoginTest.setup(LoginTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="veryfyLoginWithValidCredentials(test_testng@yopmail.com, test123$)">
+                  </a> <!-- veryfyLoginWithValidCredentials(test_testng@yopmail.com, test123$) -->
+                  <span class="method-name">veryfyLoginWithValidCredentials</span>
+                  <span class="parameters">(test_testng@yopmail.com,test123$)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 0.403
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d70c6759556ac8dcdb712d34616aebab, get {url=https://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52555/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d70c6759556ac8dcdb712d34616aebab
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.demo.qa.base.Base.openApp(Base.java:68)
+	at org.sample.TestNG_01.LoginTest.setup(LoginTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="veryfyLoginWithValidCredentials(test_testng@yopmail.com, test123$)">
+                  </a> <!-- veryfyLoginWithValidCredentials(test_testng@yopmail.com, test123$) -->
+                  <span class="method-name">veryfyLoginWithValidCredentials</span>
+                  <span class="parameters">(test_testng@yopmail.com,test123$)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 0.403
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d70c6759556ac8dcdb712d34616aebab, get {url=https://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52555/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d70c6759556ac8dcdb712d34616aebab
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.demo.qa.base.Base.openApp(Base.java:68)
+	at org.sample.TestNG_01.LoginTest.setup(LoginTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="veryfyLoginWithValidCredentials(test_testng@yopmail.com, test123$)">
+                  </a> <!-- veryfyLoginWithValidCredentials(test_testng@yopmail.com, test123$) -->
+                  <span class="method-name">veryfyLoginWithValidCredentials</span>
+                  <span class="parameters">(test_testng@yopmail.com,test123$)</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 0.403
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d70c6759556ac8dcdb712d34616aebab, get {url=https://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52555/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d70c6759556ac8dcdb712d34616aebab
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.demo.qa.base.Base.openApp(Base.java:68)
+	at org.sample.TestNG_01.LoginTest.setup(LoginTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="veryfyLoginWithValidEmailAndInValidPossword">
+                  </a> <!-- veryfyLoginWithValidEmailAndInValidPossword -->
+                  <span class="method-name">veryfyLoginWithValidEmailAndInValidPossword</span>
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 0.403
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d70c6759556ac8dcdb712d34616aebab, get {url=https://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:52555}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:52555/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d70c6759556ac8dcdb712d34616aebab
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.demo.qa.base.Base.openApp(Base.java:68)
+	at org.sample.TestNG_01.LoginTest.setup(LoginTest.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 36 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Tutolial_ninja_testsute-class-skipped -->
+        </div> <!-- panel Tutolial_ninja_testsute -->
+        <div panel-name="test-xml-Tutolial_ninja_testsute" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\JAVA\TestNG_01\src\test\resources\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;Tutolial ninja testsute&quot; guice-stage=&quot;DEVELOPMENT&quot; verbose=&quot;0&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Tutorial ninja TC&quot; verbose=&quot;0&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;org.sample.TestNG_01.RegisterTest&quot;/&gt;
+      &lt;class name=&quot;org.sample.TestNG_01.LoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Tutorial ninja TC --&gt;
+&lt;/suite&gt; &lt;!-- Tutolial ninja testsute --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Tutolial_ninja_testsute" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Tutolial ninja testsute</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Tutorial ninja TC (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Tutolial_ninja_testsute" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Tutolial ninja testsute</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Tutolial_ninja_testsute" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Tutolial ninja testsute</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Tutolial_ninja_testsute');
+function tableData_Tutolial_ninja_testsute() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(11);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'veryfyRegisteringAnAccountWithMandateryFields')
+data.setCell(0, 2, 'org.sample.TestNG_01.RegisterTest')
+data.setCell(0, 3, 32356);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'veryfyRegisteringAnAccountWithAllFields')
+data.setCell(1, 2, 'org.sample.TestNG_01.RegisterTest')
+data.setCell(1, 3, 32275);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'veryfyRegisteringEnterAnyOfFields')
+data.setCell(2, 2, 'org.sample.TestNG_01.RegisterTest')
+data.setCell(2, 3, 26989);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'veryfyRegisteringAnExistingAccount')
+data.setCell(3, 2, 'org.sample.TestNG_01.RegisterTest')
+data.setCell(3, 3, 21625);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'veryfyLoginWithCredentials')
+data.setCell(4, 2, 'org.sample.TestNG_01.LoginTest')
+data.setCell(4, 3, 1);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'veryfyLoginWithValidCredentials')
+data.setCell(5, 2, 'org.sample.TestNG_01.LoginTest')
+data.setCell(5, 3, 1);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'veryfyLoginWithValidCredentials')
+data.setCell(6, 2, 'org.sample.TestNG_01.LoginTest')
+data.setCell(6, 3, 0);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'veryfyLoginWithValidCredentials')
+data.setCell(7, 2, 'org.sample.TestNG_01.LoginTest')
+data.setCell(7, 3, 0);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'veryfyLoginWithOutCredentials')
+data.setCell(8, 2, 'org.sample.TestNG_01.LoginTest')
+data.setCell(8, 3, 0);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'veryfyLoginWithInValidEmailAndValidPossword')
+data.setCell(9, 2, 'org.sample.TestNG_01.LoginTest')
+data.setCell(9, 3, 0);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'veryfyLoginWithValidEmailAndInValidPossword')
+data.setCell(10, 2, 'org.sample.TestNG_01.LoginTest')
+data.setCell(10, 3, 0);
+window.suiteTableData['Tutolial_ninja_testsute']= { tableData: data, tableDiv: 'times-div-Tutolial_ninja_testsute'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Tutolial_ninja_testsute">
+              </div> <!-- times-div-Tutolial_ninja_testsute -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Tutolial_ninja_testsute" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Tutolial ninja testsute</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Tutolial_ninja_testsute" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Tutolial_ninja_testsute" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.sample.TestNG_01.RegisterTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">veryfyRegisteringAnAccountWithMandateryFields</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">veryfyRegisteringAnAccountWithAllFields</span>
+                <span class="method-start">32402 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">veryfyRegisteringAnExistingAccount</span>
+                <span class="method-start">64684 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">veryfyRegisteringEnterAnyOfFields</span>
+                <span class="method-start">86315 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">org.sample.TestNG_01.LoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-method before">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">setup</span>
+                <span class="method-start">113320 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">150909 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">150915 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">150947 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">150953 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="configuration-method before">
+                <span class="method-name">setup</span>
+                <span class="method-start">150959 ms</span>
+              </div> <!-- configuration-method before -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

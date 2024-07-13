@@ -8,11 +8,165 @@
 <body>
 <table>
 <tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Retried</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
-<tr><th colspan="8">Default suite</th></tr>
-<tr><td><a href="#t0">Default test</a></td><td class="num">1</td><td class="num">0</td><td class="num">0</td><td class="num">0</td><td class="num">13,274</td><td></td><td></td></tr>
+<tr><th colspan="8">Tutolial ninja testsute</th></tr>
+<tr><td><a href="#t0">Tutorial ninja TC</a></td><td class="num">0</td><td class="num attn">7</td><td class="num">0</td><td class="num">0</td><td class="num">26,550</td><td></td><td></td></tr>
 </table>
-<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Default suite</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Default test &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">org.sample.TestNG_01.Login</td><td><a href="#m0">veryfyLoginWithInValidEmailAndValidPossword</a></td><td rowspan="1">1720810526984</td><td rowspan="1">1149</td></tr></tbody>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Tutolial ninja testsute</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Tutorial ninja TC &#8212; failed (configuration methods)</th></tr><tr class="failedeven"><td rowspan="1">org.sample.TestNG_01.Login</td><td><a href="#m0">setup</a></td><td rowspan="1">1720856627039</td><td rowspan="1">26093</td></tr><tr><th colspan="4">Tutorial ninja TC &#8212; skipped (configuration methods)</th></tr><tr class="skippedeven"><td rowspan="11">org.sample.TestNG_01.Login</td><td><a href="#m1">setup</a></td><td rowspan="5">1720856653281</td><td rowspan="5">0</td></tr><tr class="skippedeven"><td><a href="#m2">setup</a></td></tr><tr class="skippedeven"><td><a href="#m3">setup</a></td></tr><tr class="skippedeven"><td><a href="#m4">setup</a></td></tr><tr class="skippedeven"><td><a href="#m5">setup</a></td></tr><tr class="skippedeven"><td><a href="#m6">tearDown</a></td><td rowspan="6">1720856653280</td><td rowspan="6">0</td></tr><tr class="skippedeven"><td><a href="#m7">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m8">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m9">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m10">tearDown</a></td></tr><tr class="skippedeven"><td><a href="#m11">tearDown</a></td></tr><tr><th colspan="4">Tutorial ninja TC &#8212; skipped</th></tr><tr class="skippedeven"><td rowspan="7">org.sample.TestNG_01.Login</td><td><a href="#m12">veryfyLoginWithCredentials</a></td><td rowspan="1">1720856653255</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m13">veryfyLoginWithInValidEmailAndValidPossword</a></td><td rowspan="1">1720856653260</td><td rowspan="1">1</td></tr><tr class="skippedeven"><td><a href="#m14">veryfyLoginWithOutCredentials</a></td><td rowspan="1">1720856653282</td><td rowspan="1">0</td></tr><tr class="skippedeven"><td><a href="#m15">veryfyLoginWithValidCredentials</a></td><td rowspan="3">1720856653228</td><td rowspan="3">0</td></tr><tr class="skippedeven"><td><a href="#m16">veryfyLoginWithValidCredentials</a></td></tr><tr class="skippedeven"><td><a href="#m17">veryfyLoginWithValidCredentials</a></td></tr><tr class="skippedeven"><td><a href="#m18">veryfyLoginWithValidEmailAndInValidPossword</a></td><td rowspan="1">1720856653273</td><td rowspan="1">0</td></tr></tbody>
 </table>
-<h2>Default test</h2><h3 id="m0">org.sample.TestNG_01.Login#veryfyLoginWithInValidEmailAndValidPossword</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h2>Tutorial ninja TC</h2><h3 id="m0">org.sample.TestNG_01.Login#setup</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 1.686
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [241e95f2e68e9df6dd46d28ea2062ef7, get {url=https://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49940}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49940/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 241e95f2e68e9df6dd46d28ea2062ef7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.demo.qa.base.Base.openApp(Base.java:68)
+	at org.sample.TestNG_01.Login.setup(Login.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">org.sample.TestNG_01.Login#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">org.sample.TestNG_01.Login#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">org.sample.TestNG_01.Login#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">org.sample.TestNG_01.Login#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">org.sample.TestNG_01.Login#setup</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">org.sample.TestNG_01.Login#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">org.sample.TestNG_01.Login#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">org.sample.TestNG_01.Login#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">org.sample.TestNG_01.Login#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">org.sample.TestNG_01.Login#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">org.sample.TestNG_01.Login#tearDown</h3><table class="result"><tr><th class="invisible"/></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">org.sample.TestNG_01.Login#veryfyLoginWithCredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">java.lang.Throwable: Method org.sample.TestNG_01.Login.veryfyLoginWithCredentials() on instance org.sample.TestNG_01.Login@47eaca72 depends on not successfully finished methods 
+[org.sample.TestNG_01.Login.veryfyLoginWithValidCredentials() on instance org.sample.TestNG_01.Login@47eaca72]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">org.sample.TestNG_01.Login#veryfyLoginWithInValidEmailAndValidPossword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 1.686
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [241e95f2e68e9df6dd46d28ea2062ef7, get {url=https://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49940}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49940/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 241e95f2e68e9df6dd46d28ea2062ef7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.demo.qa.base.Base.openApp(Base.java:68)
+	at org.sample.TestNG_01.Login.setup(Login.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">org.sample.TestNG_01.Login#veryfyLoginWithOutCredentials</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 1.686
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [241e95f2e68e9df6dd46d28ea2062ef7, get {url=https://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49940}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49940/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 241e95f2e68e9df6dd46d28ea2062ef7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.demo.qa.base.Base.openApp(Base.java:68)
+	at org.sample.TestNG_01.Login.setup(Login.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">org.sample.TestNG_01.Login#veryfyLoginWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>test_testng@yopmail.com</td><td>test123$</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 1.686
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [241e95f2e68e9df6dd46d28ea2062ef7, get {url=https://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49940}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49940/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 241e95f2e68e9df6dd46d28ea2062ef7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.demo.qa.base.Base.openApp(Base.java:68)
+	at org.sample.TestNG_01.Login.setup(Login.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">org.sample.TestNG_01.Login#veryfyLoginWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>test_testng@yopmail.com</td><td>test123$</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 1.686
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [241e95f2e68e9df6dd46d28ea2062ef7, get {url=https://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49940}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49940/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 241e95f2e68e9df6dd46d28ea2062ef7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.demo.qa.base.Base.openApp(Base.java:68)
+	at org.sample.TestNG_01.Login.setup(Login.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">org.sample.TestNG_01.Login#veryfyLoginWithValidCredentials</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th></tr><tr class="param stripe"><td>test_testng@yopmail.com</td><td>test123$</td></tr><tr><th colspan="2">Exception</th></tr><tr><td colspan="2"><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 1.686
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [241e95f2e68e9df6dd46d28ea2062ef7, get {url=https://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49940}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49940/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 241e95f2e68e9df6dd46d28ea2062ef7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.demo.qa.base.Base.openApp(Base.java:68)
+	at org.sample.TestNG_01.Login.setup(Login.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">org.sample.TestNG_01.Login#veryfyLoginWithValidEmailAndInValidPossword</h3><table class="result"><tr><th>Exception</th></tr><tr><td><div class="stacktrace">org.openqa.selenium.TimeoutException: timeout: Timed out receiving message from renderer: 1.686
+  (Session info: chrome=126.0.6478.127)
+Build info: version: &apos;4.22.0&apos;, revision: &apos;c5f3146703*&apos;
+System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;20.0.2&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [241e95f2e68e9df6dd46d28ea2062ef7, get {url=https://tutorialsninja.com/demo/}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 126.0.6478.127, chrome: {chromedriverVersion: 126.0.6478.126 (d36ace6122e..., userDataDir: C:\Users\CLINTO~1\AppData\L...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:49940}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), se:cdp: ws://localhost:49940/devtoo..., se:cdpVersion: 126.0.6478.127, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 241e95f2e68e9df6dd46d28ea2062ef7
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:518)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:300)
+	at org.demo.qa.base.Base.openApp(Base.java:68)
+	at org.sample.TestNG_01.Login.setup(Login.java:28)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 32 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
 </body>
 </html>
